@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 class NumberlistAdopter extends ArrayAdapter<Numberlist> {
 
-    private static final String LOG_TAG = NumberlistAdopter.class.getSimpleName();
+   // private static final String LOG_TAG = NumberlistAdopter.class.getSimpleName();
 
     /**
      * This is our own custom constructor
@@ -53,15 +53,15 @@ class NumberlistAdopter extends ArrayAdapter<Numberlist> {
         // Get the object located at this position in the list
         Numberlist currentword = getItem(position);
 
-        // Find the TextView in the root_layout.xml layout with the ID version_name
+        // Find the TextView in the root_layout.xml layout with the ID miwok
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.miwok);
-        // Get the version name from the current Numberlist object and
+        // Get the Miwok word from the current Numberlist object and
         // set this text on the name TextView
         nameTextView.setText(currentword.getMiwok());
 
-        // Find the TextView in the root_layout.xml layout with the ID version_number
+        // Find the TextView in the root_layout.xml layout with the ID english
         TextView numberTextView = (TextView) listItemView.findViewById(R.id.english);
-        // Get the version number from the current Numberlist object and
+        // Get the english word from the current Numberlist object and
         // set this text on the number TextView
         numberTextView.setText(currentword.getEnglish());
 

@@ -13,10 +13,10 @@ class Numberlist {
 
     private int mImageResourceId;
 
-    public Numberlist(String vName, String vNumber, int imageResourceId)
+    public Numberlist(String Miwok, String English, int imageResourceId)
     {
-        mMiwok = vName;
-        mEnglish = vNumber;
+        mMiwok = Miwok;
+        mEnglish = English;
         mImageResourceId = imageResourceId;
     }
 
